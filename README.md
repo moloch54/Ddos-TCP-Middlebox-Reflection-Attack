@@ -30,6 +30,7 @@ Sending a spoofed ACK+PSH with a HTTP GET payload packet(SRC=Victim, DST=Pornhub
 You need:
 * tcpreplay
 * mergecap
+* scapy
 
 
 
