@@ -9,7 +9,7 @@
 # sudo python3 tra.py <duration in s> <IP>
 # 
 #
-# ex: sudo python3 tra.py 300 123.4.5.6
+# ex: sudo python3 mra.py 300 123.4.5.6
 
 import random
 import threading
