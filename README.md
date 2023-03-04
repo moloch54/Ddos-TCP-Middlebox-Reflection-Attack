@@ -22,7 +22,9 @@ The trick is to send a SYN packet (SRC:Victim, DST:Filtered site) and ACK packet
 Sending a spoofed SYN packet(SRC=Victim, DST=Pornhub|Youporn|Bittorrent....)  
 Sending a spoofed ACK+PSH with a HTTP GET payload packet(SRC=Victim, DST=Pornhub|Youporn|Bittorrent....)  
 
-Don't do anything illegal with that piece of code.  
+| :warning: WARNING                                     |
+|:------------------------------------------------------|
+|Don`'t do anything illegal with that piece of code.    |  
 
 # Requirements  
 You need:
