@@ -1,5 +1,6 @@
 # Ddos-TCP-Middlebox-Reflection-Attack  
-Ddos technique with great amplification factor from using MiddleBox  
+https://geneva.cs.umd.edu/papers/usenix-weaponizing-ddos.pdf  
+Ddos technique with great amplification factor using MiddleBox  
 
 # The technique  
 ![middle](https://user-images.githubusercontent.com/123097488/222929668-9483378a-52b0-4f28-bf23-448f3ad275fe.png)  
@@ -22,5 +23,11 @@ Sending a spoofed SYN packet(SRC=Victim, DST=Pornhub|Youporn|Bittorrent....)
 Sending a spoofed ACK+PSH with a HTTP GET payload packet(SRC=Victim, DST=Pornhub|Youporn|Bittorrent....)  
 
 Don't do anything illegal with that piece of code.  
+
+# Requirements  
+You need:
+* tcpreplay
+* mergecap
+
 
 
