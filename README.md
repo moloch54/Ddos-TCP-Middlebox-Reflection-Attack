@@ -24,7 +24,7 @@ Sending a spoofed ACK+PSH with a HTTP GET payload packet(SRC=Victim, DST=Pornhub
 
 | :warning: WARNING                                     |
 |:------------------------------------------------------|
-|Don`'t do anything illegal with that piece of code.    |  
+|Don't do anything illegal with that piece of code.    |  
 
 # Requirements  
 You need:
