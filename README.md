@@ -14,7 +14,7 @@ Ddos technique with great amplification factor using MiddleBox
 MiddleBoxes are state's firewalls, sendind RST and sometimes more(like an entire webpage) to the source who wants to connect to a "forbidden site", and also to the destination. The destination could also send a RST to the Middlebox (infinite loop) 
 
 # The trick  
-It may happen that the (SYN,ACK) packet takes another path and don't get through the MiddleBox who have seen the (SYN) packet!  
+Make believe that the (SYN,ACK) packet takes another path and didn't get through the MiddleBox who have seen the (SYN) packet!  
 The trick is to send a SYN packet (SRC:Victim, DST:Filtered site) and ACK packet (SRC:Victim, DEST:Filtered site) just after, to trigger a reply from the MiddleBox(at least a RST, sometimes much more !!!) 
 
 # PoC  
