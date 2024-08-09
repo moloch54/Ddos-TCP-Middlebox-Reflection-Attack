@@ -30,7 +30,7 @@ print("*"*len(a))
 print(a)
 print("*"*len(a)+"\n")
 
-def generate(target_ip, nb_pkt_per_thread, i):
+def generate(oc, target_ip, nb_pkt_per_thread, i):
     uni_list = []
     
     for _ in range(int(nb_pkt_per_thread/2)):
@@ -92,7 +92,7 @@ nb_pkt_per_thread = int(nb_packets/nb_cpu)
 duration=sys.argv[1]
 target_ip = sys.argv[2]
 print(f"{nb_cpu} CPU(s) forging {int(nb_packets*oc/2)} random SYN, ACK+PSH packets...") 
-process=[(Process(target=generate, args=(target_ip,nb_pkt_per_thread,i))) for i in range(nb_cpu)]
+process=[(Process(target=generate, args=(oc,target_ip,nb_pkt_per_thread,i))) for i in range(nb_cpu)]
 t=time.time()
 for p in process:
     p.start() 
